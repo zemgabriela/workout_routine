@@ -399,9 +399,10 @@
         <h1>🏋️ Functional Kettlebell Training</h1>
         <p class="subtitle">Build Strength, Power & Mobility with These Essential Kettlebell Exercises</p>
     </header>
-
     <div style="text-align:center; margin: 20px 0;">
         <div style="display: flex; flex-direction: column; align-items: center; gap: 18px; max-width: 520px; margin: 0 auto 28px auto;">
+        <div id="quickStartBar" style="margin-top: 18px;">
+        <!-- Quick Start UI removed: templates will appear in Saved Workouts -->
             <input id="exerciseSearch" type="text" placeholder="🔍 Search exercises..." style="width: 100%; max-width: 500px; padding: 12px 18px; border-radius: 8px; border: 1.5px solid #667eea; font-size: 1.08em; margin-bottom: 0; background: #f0f4ff; color: #333; box-shadow: 0 1px 4px rgba(102,126,234,0.08); outline: none;">
             <div id="filterBar" style="display: flex; justify-content: center; align-items: center; gap: 16px; background: rgba(255,255,255,0.95); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 18px 24px; width: 100%; max-width: 500px;">
                 <label for="muscleFilter" style="color: #667eea; font-weight: bold; font-size: 1.1em; margin-right: 0;">Filter by muscle:</label>
@@ -412,7 +413,9 @@
             </div>
         </div>
     </div>
-
+    <div style="text-align:center; margin: 24px 0;">
+        <button id="hideUnselectedBtn" style="padding: 12px 28px; font-size: 1.1em; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 8px rgba(102,126,234,0.15); transition: background 0.2s;" onclick="hideUnselectedExercises()">Hide Unselected</button>
+    </div>
     <div class="exercise-grid" id="exerciseGrid"></div>
 
     <footer>
@@ -422,7 +425,67 @@
 </div>
 
 <script>
+// --- Quick Start Templates as Saved Workouts ---
+const quickStartTemplates = [
+    {
+        name: "Full Body",
+        exercises: [
+            "Kettlebell Swing", "Kettlebell Goblet Squat", "Kettlebell Bent Over Row", "Kettlebell Press Up", "Kettlebell Russian Twist"
+        ]
+    },
+    {
+        name: "Advanced HIIT",
+        exercises: [
+            "Kettlebell One Arm Swing", "Kettlebell Thruster", "Kettlebell Clean and Press", "Kettlebell Plyo Pushup", "Kettlebell Rear Lunge"
+        ]
+    },
+    {
+        name: "Core Focused",
+        exercises: [
+            "Kettlebell Russian Twist", "Kettlebell Sit Up", "Kettlebell Windmill", "Kettlebell Dead Bug", "Kettlebell Side Plank"
+        ]
+    },
+    {
+        name: "Pull",
+        exercises: [
+            "Kettlebell Bent Over Row", "Kettlebell Alternating Renegade Row", "Kettlebell One Arm Row", "Kettlebell Upright Row", "Kettlebell Two Arm Row"
+        ]
+    },
+    {
+        name: "Push",
+        exercises: [
+            "Kettlebell Press Up", "Kettlebell Two Arm Military Press", "Kettlebell Seated Press", "Kettlebell Arnold Press", "Kettlebell Plyo Pushup"
+        ]
+    }
+];
+
+function getQuickStartWorkouts() {
+    // Map template names to full exercise objects
+    return quickStartTemplates.map(tpl => {
+        return {
+            name: tpl.name + " (Template)",
+            exercises: tpl.exercises.map(name => {
+                const ex = allExercises.find(e => e.name === name);
+                return ex ? {
+                    name: ex.name,
+                    muscles: ex.muscles,
+                    sets: 3,
+                    reps: 10
+                } : null;
+            }).filter(Boolean),
+            date: null, // Templates don't have a date
+            isTemplate: true
+        };
+    });
+}
 let allExercises = [];
+
+function hideUnselectedExercises() {
+    // Only show selected exercises in the grid
+    const selectedNames = selectedExercises.map(ex => ex.name);
+    const selectedOnly = allExercises.filter(ex => selectedNames.includes(ex.name));
+    renderExercises(selectedOnly);
+}
 let selectedExercises = [];
 
 fetch("exercises.json")
@@ -689,19 +752,56 @@ async function loadAllWorkouts() {
 async function loadSavedWorkouts() {
     const workoutsList = document.getElementById('savedWorkoutsList');
     const workouts = await loadAllWorkouts();
-    
-    if (workouts.length === 0) {
-        workoutsList.innerHTML = '<p style="color: #999; text-align: center; padding: 20px;">No saved workouts yet.</p>';
-        return;
-    }
-    
-    workoutsList.innerHTML = workouts.map((workout, index) => `
-        <div class="saved-workout-item" onclick="loadWorkout(${index})">
-            <button class="delete-workout" onclick="event.stopPropagation(); deleteWorkout(${index})">Delete</button>
-            <h4>${workout.name}</h4>
-            <small>${workout.exercises.length} exercises • ${new Date(workout.date).toLocaleDateString()}</small>
+    const templates = getQuickStartWorkouts();
+
+    let html = '';
+    // Add templates first
+    templates.forEach((tpl, tIndex) => {
+        html += `
+        <div class="saved-workout-item" onclick="loadQuickStartWorkout(${tIndex})">
+            <span style="background:#667eea;color:white;padding:2px 8px;border-radius:6px;font-size:0.85em;margin-right:8px;">Template</span>
+            <h4 style="display:inline;">${tpl.name}</h4>
+            <small style="display:block;">${tpl.exercises.length} exercises</small>
         </div>
-    `).join('');
+        `;
+    });
+
+    // Add user-saved workouts
+    if (workouts.length === 0 && templates.length === 0) {
+        html += '<p style="color: #999; text-align: center; padding: 20px;">No saved workouts yet.</p>';
+    } else {
+        html += workouts.map((workout, index) => `
+            <div class="saved-workout-item" onclick="loadWorkout(${index})">
+                <button class="delete-workout" onclick="event.stopPropagation(); deleteWorkout(${index})">Delete</button>
+                <h4>${workout.name}</h4>
+                <small>${workout.exercises.length} exercises • ${new Date(workout.date).toLocaleDateString()}</small>
+            </div>
+        `).join('');
+    }
+    workoutsList.innerHTML = html;
+// Make loadQuickStartWorkout globally accessible
+function loadQuickStartWorkout(tIndex) {
+    const templates = getQuickStartWorkouts();
+    const tpl = templates[tIndex];
+    if (tpl) {
+        selectedExercises = JSON.parse(JSON.stringify(tpl.exercises));
+        document.getElementById('trainingName').value = tpl.name.replace(' (Template)', '');
+        updateSelectedCount();
+        renderSelectedExercises();
+        document.querySelectorAll('.exercise-checkbox').forEach(cb => cb.checked = false);
+        document.querySelectorAll('.exercise-card').forEach(card => card.classList.remove('selected'));
+        selectedExercises.forEach(selEx => {
+            const exerciseIndex = allExercises.findIndex(ex => ex.name === selEx.name);
+            if (exerciseIndex !== -1) {
+                const checkbox = document.querySelector(`#card-${exerciseIndex} .exercise-checkbox`);
+                if (checkbox) checkbox.checked = true;
+                updateCardSelection(exerciseIndex, true);
+            }
+        });
+        alert(`✅ Loaded template: ${tpl.name}`);
+    }
+}
+window.loadQuickStartWorkout = loadQuickStartWorkout;
 }
 
 async function loadWorkout(index) {
@@ -711,22 +811,15 @@ async function loadWorkout(index) {
     if (workout) {
         selectedExercises = JSON.parse(JSON.stringify(workout.exercises));
         document.getElementById('trainingName').value = workout.name;
-        
         updateSelectedCount();
         renderSelectedExercises();
-        
-        document.querySelectorAll('.exercise-checkbox').forEach(cb => cb.checked = false);
-        document.querySelectorAll('.exercise-card').forEach(card => card.classList.remove('selected'));
-        
-        selectedExercises.forEach(selEx => {
-            const exerciseIndex = allExercises.findIndex(ex => ex.name === selEx.name);
-            if (exerciseIndex !== -1) {
-                const checkbox = document.querySelector(`#card-${exerciseIndex} .exercise-checkbox`);
-                if (checkbox) checkbox.checked = true;
-                updateCardSelection(exerciseIndex, true);
-            }
-        });
-        
+
+        // Show only the exercises from the loaded workout in the grid
+        const loadedExercises = workout.exercises.map(ex => {
+            return allExercises.find(e => e.name === ex.name);
+        }).filter(Boolean);
+        renderExercises(loadedExercises);
+
         alert(`✅ Loaded workout: ${workout.name}`);
     }
 }
