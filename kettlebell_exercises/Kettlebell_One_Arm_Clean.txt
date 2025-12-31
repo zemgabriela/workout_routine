@@ -1,0 +1,4 @@
+Name: Kettlebell One Arm Clean
+Description: This exercise involves lifting a kettlebell from the ground to the shoulder in one fluid motion using only one arm. It requires proper technique and core stability to prevent injury and maximize results.
+Muscle Group: Weightlifting
+Image: kettlebell_exercises/Kettlebell_One_Arm_Clean.jpg

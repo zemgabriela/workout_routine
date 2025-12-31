@@ -1,0 +1,4 @@
+Name: Kettlebell Seated Press
+Description: This exercise involves sitting on a bench or chair and pressing a kettlebell overhead with one arm at a time. It primarily targets the shoulders and triceps while also engaging the core for stability.
+Muscle Group: Front Deltoid,Shoulders
+Image: kettlebell_exercises/Kettlebell_Seated_Press.jpg

@@ -1,0 +1,4 @@
+Name: Kettlebell Good Morning
+Description: This exercise involves holding a kettlebell in front of your chest and bending forward at the hips while keeping your back straight. It primarily targets the hamstrings and glutes.
+Muscle Group: Hamstrings,Hips
+Image: kettlebell_exercises/Kettlebell_Good_Morning.jpg

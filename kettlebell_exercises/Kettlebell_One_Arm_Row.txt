@@ -1,0 +1,4 @@
+Name: Kettlebell One Arm Row
+Description: This exercise involves using a kettlebell to perform a rowing motion with one arm, targeting the back muscles. The movement involves pulling the kettlebell towards the body while keeping the core engaged and maintaining proper form.
+Muscle Group: Abs,Back,Latissimus Dorsi,Traps
+Image: kettlebell_exercises/Kettlebell_One_Arm_Row.jpg

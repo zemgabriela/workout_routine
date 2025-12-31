@@ -1,0 +1,4 @@
+Name: Kettlebell One Arm Snatch
+Description: This exercise involves using a kettlebell to perform a one arm snatch movement, which involves lifting the kettlebell from the ground to overhead in one fluid motion. It is a full body exercise that targets the shoulders, back, legs, and core.
+Muscle Group: Calves,Front Deltoid,Glutes,Hamstrings,Quadriceps,Shoulders,Side Deltoid,Triceps
+Image: kettlebell_exercises/Kettlebell_One_Arm_Snatch.jpg

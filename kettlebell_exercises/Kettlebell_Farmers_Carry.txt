@@ -1,0 +1,4 @@
+Name: Kettlebell Farmers Carry
+Description: This exercise involves holding a kettlebell in each hand and walking for a certain distance or time. It primarily targets the grip, core, and leg muscles while also improving overall stability and balance.
+Muscle Group: Glutes,Hips,Quadriceps,Thighs
+Image: kettlebell_exercises/Kettlebell_Farmers_Carry.jpg

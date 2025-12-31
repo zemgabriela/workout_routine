@@ -1,0 +1,4 @@
+Name: Kettlebell One Legged Deadlift
+Description: This exercise involves holding a kettlebell in one hand and standing on one leg while bending forward to touch the kettlebell to the ground. It targets the hamstrings, glutes, and lower back while also improving balance and stability.
+Muscle Group: Glutes,Hips
+Image: kettlebell_exercises/Kettlebell_One_Legged_Deadlift.jpg

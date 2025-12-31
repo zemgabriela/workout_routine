@@ -1,0 +1,4 @@
+Name: Kettlebell Goblet Squat
+Description: This exercise involves holding a kettlebell close to your chest while performing a squat. It targets the lower body muscles, including the quads, glutes, and hamstrings, while also engaging the core and upper body. It can be modified for different fitness levels by adjusting the weight of the kettlebell.
+Muscle Group: Glutes,Quadriceps,Thighs
+Image: kettlebell_exercises/Kettlebell_Goblet_Squat.jpg

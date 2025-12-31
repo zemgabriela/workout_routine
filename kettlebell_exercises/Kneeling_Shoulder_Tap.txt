@@ -1,0 +1,4 @@
+Name: Kneeling Shoulder Tap
+Description: This exercise involves starting in a kneeling position and tapping your opposite shoulder with your hand while maintaining a stable core and avoiding any twisting or swaying movements. It helps to improve shoulder stability and core strength.
+Muscle Group: Chest
+Image: kettlebell_exercises/Kneeling_Shoulder_Tap.jpg

@@ -1,0 +1,4 @@
+Name: Kettlebell One Arm Floor Press
+Description: This exercise involves lying on the floor with a kettlebell in one hand and pressing it upwards while keeping the other arm extended. It targets the chest, triceps, and shoulders while also engaging the core muscles for stability.
+Muscle Group: Chest
+Image: kettlebell_exercises/Kettlebell_One_Arm_Floor_Press.jpg

@@ -1,0 +1,4 @@
+Name: Kettlebell Overhead Carry
+Description: This exercise involves holding a kettlebell overhead and walking with it for a certain distance or time. It primarily targets the shoulders, core, and upper back muscles while also improving grip strength and stability.
+Muscle Group: Thighs
+Image: kettlebell_exercises/Kettlebell_Overhead_Carry.jpg

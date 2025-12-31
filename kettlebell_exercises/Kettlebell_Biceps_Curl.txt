@@ -1,0 +1,4 @@
+Name: Kettlebell Biceps Curl
+Description: This exercise involves holding a kettlebell in each hand and curling them up towards your shoulders, targeting the biceps muscles. It is a great way to build strength and definition in the arms.
+Muscle Group: Biceps,Upper Arms
+Image: kettlebell_exercises/Kettlebell_Biceps_Curl.jpg

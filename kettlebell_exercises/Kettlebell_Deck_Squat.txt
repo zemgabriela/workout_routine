@@ -1,0 +1,4 @@
+Name: Kettlebell Deck Squat
+Description: This exercise involves holding a kettlebell at chest level while performing a squat and then returning to a standing position. It targets the lower body muscles, including the glutes, quads, and hamstrings, while also engaging the core and upper body.
+Muscle Group: Back,Hips,Thighs,Waist
+Image: kettlebell_exercises/Kettlebell_Deck_Squat.jpg

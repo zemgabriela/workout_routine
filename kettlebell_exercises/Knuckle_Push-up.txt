@@ -1,0 +1,4 @@
+Name: Knuckle Push-up
+Description: This exercise involves performing a push-up while balancing on the knuckles of the hands instead of the palms. It can help to strengthen the wrists and forearms, as well as the chest, shoulders, and triceps.
+Muscle Group: Chest
+Image: kettlebell_exercises/Knuckle_Push-up.jpg

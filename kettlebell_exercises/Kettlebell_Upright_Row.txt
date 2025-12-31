@@ -1,0 +1,4 @@
+Name: Kettlebell Upright Row
+Description: This exercise involves holding a kettlebell with both hands and lifting it up towards the chest, keeping the elbows high and close to the body. It primarily targets the shoulders and upper back muscles.
+Muscle Group: Shoulders,Side Deltoid
+Image: kettlebell_exercises/Kettlebell_Upright_Row.jpg

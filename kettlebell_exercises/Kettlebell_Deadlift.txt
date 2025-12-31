@@ -1,0 +1,4 @@
+Name: Kettlebell Deadlift
+Description: This exercise involves lifting a kettlebell from the ground using a deadlift motion, which primarily targets the muscles in the legs and lower back. It is a great exercise for building overall strength and improving posture.
+Muscle Group: Glutes,Hips,Quadriceps,Thighs
+Image: kettlebell_exercises/Kettlebell_Deadlift.jpg

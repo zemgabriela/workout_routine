@@ -1,0 +1,4 @@
+Name: Kettlebell Single Arm Clean
+Description: This exercise involves using a kettlebell to perform a single-arm clean, which involves lifting the kettlebell from the ground to the shoulder in one fluid motion. It is a full-body exercise that primarily targets the shoulders, back, and legs.
+Muscle Group: Weightlifting
+Image: kettlebell_exercises/Kettlebell_Single_Arm_Clean.jpg

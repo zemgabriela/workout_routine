@@ -1,0 +1,4 @@
+Name: Kettlebell Lateral Lunge
+Description: This exercise involves holding a kettlebell in one hand and stepping to the side with the opposite leg, bending the knee and lowering the body into a lunge position. The movement targets the glutes, quads, and inner thighs while also engaging the core and improving balance.
+Muscle Group: Thighs
+Image: kettlebell_exercises/Kettlebell_Lateral_Lunge.jpg

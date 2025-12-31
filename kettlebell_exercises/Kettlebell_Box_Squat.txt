@@ -1,0 +1,4 @@
+Name: Kettlebell Box Squat
+Description: This exercise involves holding a kettlebell in front of your chest while performing a squat with your feet on a box or bench. It targets the lower body muscles, including the glutes, quads, and hamstrings, while also engaging the core and upper body.
+Muscle Group: Glutes,Hips,Quadriceps
+Image: kettlebell_exercises/Kettlebell_Box_Squat.jpg

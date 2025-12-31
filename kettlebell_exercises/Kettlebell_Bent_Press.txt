@@ -1,0 +1,4 @@
+Name: Kettlebell Bent Press
+Description: This exercise involves holding a kettlebell in one hand and pressing it overhead while simultaneously bending to the opposite side. It targets the shoulders, core, and obliques.
+Muscle Group: Front Deltoid,Obliques,Waist
+Image: kettlebell_exercises/Kettlebell_Bent_Press.jpg

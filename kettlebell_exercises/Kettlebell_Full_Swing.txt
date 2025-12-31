@@ -1,0 +1,4 @@
+Name: Kettlebell Full Swing
+Description: This exercise involves swinging a kettlebell from between the legs up to shoulder height, using a hip hinge movement. It targets the posterior chain muscles, including the glutes, hamstrings, and lower back, as well as the shoulders and core. It can be used for strength and conditioning purposes.
+Muscle Group: Front Deltoid,Glutes,Hips,Shoulders
+Image: kettlebell_exercises/Kettlebell_Full_Swing.jpg

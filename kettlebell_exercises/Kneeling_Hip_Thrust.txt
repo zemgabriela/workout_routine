@@ -1,0 +1,4 @@
+Name: Kneeling Hip Thrust
+Description: This exercise involves kneeling on the ground with your feet flat on the floor and your hands on your hips. From this position, you thrust your hips forward and upward, squeezing your glutes at the top of the movement. This exercise targets the glutes and can be done with or without added weight.
+Muscle Group: Hips
+Image: kettlebell_exercises/Kneeling_Hip_Thrust.jpg

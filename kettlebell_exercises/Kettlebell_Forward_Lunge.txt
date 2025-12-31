@@ -1,0 +1,4 @@
+Name: Kettlebell Forward Lunge
+Description: This exercise involves holding a kettlebell in one hand and stepping forward into a lunge position with the opposite leg. The movement targets the lower body muscles, including the glutes, quads, and hamstrings, while also engaging the core and improving balance and stability.
+Muscle Group: Hips,Thighs
+Image: kettlebell_exercises/Kettlebell_Forward_Lunge.jpg

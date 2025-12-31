@@ -1,0 +1,4 @@
+Name: Kettlebell One Arm Bench Press
+Description: This exercise involves using a kettlebell to perform a bench press with one arm at a time. It targets the chest, shoulders, and triceps while also engaging the core for stability.
+Muscle Group: Chest
+Image: kettlebell_exercises/Kettlebell_One_Arm_Bench_Press.jpg

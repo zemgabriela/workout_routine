@@ -1,0 +1,4 @@
+Name: Kettlebell Rear Lunge
+Description: This exercise involves holding a kettlebell and stepping back into a lunge position, then returning to a standing position. It primarily targets the glutes, hamstrings, and quadriceps.
+Muscle Group: Thighs
+Image: kettlebell_exercises/Kettlebell_Rear_Lunge.jpg

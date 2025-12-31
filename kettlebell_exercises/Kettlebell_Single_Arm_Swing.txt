@@ -1,0 +1,4 @@
+Name: Kettlebell Single Arm Swing
+Description: This exercise involves swinging a kettlebell with one arm, using a hip hinge motion to generate power and momentum. It targets the posterior chain muscles, including the glutes, hamstrings, and lower back, while also engaging the core and shoulders.
+Muscle Group: Hips,Thighs
+Image: kettlebell_exercises/Kettlebell_Single_Arm_Swing.jpg

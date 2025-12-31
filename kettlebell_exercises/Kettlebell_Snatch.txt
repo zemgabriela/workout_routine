@@ -1,0 +1,4 @@
+Name: Kettlebell Snatch
+Description: This exercise involves lifting a kettlebell from the ground to overhead in one fluid motion, using a combination of hip drive and arm extension. It is a full-body exercise that targets the shoulders, back, legs, and core.
+Muscle Group: Weightlifting
+Image: kettlebell_exercises/Kettlebell_Snatch.jpg

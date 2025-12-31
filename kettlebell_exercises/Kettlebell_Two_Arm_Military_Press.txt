@@ -1,0 +1,4 @@
+Name: Kettlebell Two Arm Military Press
+Description: This exercise involves holding a kettlebell in each hand and pressing them overhead while standing. It primarily targets the shoulders, triceps, and upper back muscles.
+Muscle Group: Front Deltoid,Shoulders
+Image: kettlebell_exercises/Kettlebell_Two_Arm_Military_Press.jpg

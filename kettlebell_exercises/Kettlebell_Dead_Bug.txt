@@ -1,0 +1,4 @@
+Name: Kettlebell Dead Bug
+Description: This exercise involves lying on your back with a kettlebell held above your chest, while simultaneously extending your opposite arm and leg away from your body. The goal is to maintain stability and control throughout the movement, engaging your core muscles.
+Muscle Group: Waist
+Image: kettlebell_exercises/Kettlebell_Dead_Bug.jpg

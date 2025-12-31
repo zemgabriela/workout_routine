@@ -1,0 +1,4 @@
+Name: Kettlebell Slingshot
+Description: This exercise involves swinging a kettlebell around the body in a circular motion, passing it from one hand to the other behind the back. It targets the core, shoulders, and arms while also improving coordination and grip strength.
+Muscle Group: Front Deltoid,Rear Deltoid,Shoulders,Side Deltoid
+Image: kettlebell_exercises/Kettlebell_Slingshot.jpg

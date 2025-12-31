@@ -1,0 +1,4 @@
+Name: Kettlebell Clean and Jerk
+Description: This exercise involves lifting a kettlebell from the ground to the shoulder, then pushing it overhead in a single fluid motion. It is a full-body exercise that targets the shoulders, back, legs, and core.
+Muscle Group: Weightlifting
+Image: kettlebell_exercises/Kettlebell_Clean_and_Jerk.jpg

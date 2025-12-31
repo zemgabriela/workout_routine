@@ -1,0 +1,4 @@
+Name: Kettlebell Arnold Press
+Description: This exercise involves holding a kettlebell in each hand and performing a shoulder press while rotating the weights inward and outward, similar to the motion of an Arnold Schwarzenegger bicep curl. It targets the shoulders, triceps, and upper back muscles.
+Muscle Group: Front Deltoid,Shoulders
+Image: kettlebell_exercises/Kettlebell_Arnold_Press.jpg

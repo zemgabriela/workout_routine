@@ -1,0 +1,4 @@
+Name: Kettlebell Sots Press
+Description: The Kettlebell Sots Press is an exercise that involves holding a kettlebell in the front rack position and pressing it overhead while in a deep squat. This exercise helps to improve upper body and core strength, as well as mobility and stability in the hips and ankles.
+Muscle Group: Front Deltoid,Glutes,Hips,Quadriceps,Shoulders,Thighs
+Image: kettlebell_exercises/Kettlebell_Sots_Press.jpg

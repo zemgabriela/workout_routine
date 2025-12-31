@@ -1,0 +1,4 @@
+Name: Kettlebell One Arm Push Press
+Description: This exercise involves holding a kettlebell in one hand and performing a push press movement, which involves bending the knees and using the legs to help drive the kettlebell overhead. It primarily targets the shoulders, triceps, and core muscles.
+Muscle Group: Front Deltoid,Shoulders
+Image: kettlebell_exercises/Kettlebell_One_Arm_Push_Press.jpg

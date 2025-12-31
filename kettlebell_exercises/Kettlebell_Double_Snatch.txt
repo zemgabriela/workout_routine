@@ -1,0 +1,4 @@
+Name: Kettlebell Double Snatch
+Description: This exercise involves using a kettlebell to perform a double snatch movement, which involves lifting the kettlebell from the ground to overhead in one fluid motion using both arms. It is a full-body exercise that targets the shoulders, back, legs, and core.
+Muscle Group: Upper Arms
+Image: kettlebell_exercises/Kettlebell_Double_Snatch.jpg

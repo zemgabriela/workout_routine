@@ -1,0 +1,4 @@
+Name: Kettlebell Lunge With Twist
+Description: This exercise involves holding a kettlebell in front of your chest while performing lunges, and twisting your torso to the side with each lunge. It targets the legs, core, and obliques.
+Muscle Group: Thighs
+Image: kettlebell_exercises/Kettlebell_Lunge_With_Twist.jpg

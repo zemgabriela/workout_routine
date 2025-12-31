@@ -1,0 +1,4 @@
+Name: Kettlebell Lunge Pass Through
+Description: The Kettlebell Lunge Pass Through is an exercise that involves holding a kettlebell in one hand and lunging forward with the opposite leg while passing the kettlebell under the lunging leg and catching it with the other hand. This exercise targets the legs, core, and shoulders while also improving coordination and balance.
+Muscle Group: Glutes,Quadriceps,Thighs
+Image: kettlebell_exercises/Kettlebell_Lunge_Pass_Through.jpg

@@ -1,0 +1,4 @@
+Name: Kettlebell Two Arm Clean
+Description: This exercise involves lifting a kettlebell from the ground to the shoulders using both arms in a clean motion. It is a full-body exercise that targets the legs, hips, back, shoulders, and arms. It is commonly used in strength and conditioning programs to improve power and explosiveness.
+Muscle Group: Shoulders
+Image: kettlebell_exercises/Kettlebell_Two_Arm_Clean.jpg

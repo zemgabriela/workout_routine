@@ -1,0 +1,4 @@
+Name: Kettlebell Alternating Renegade Row
+Description: This exercise involves using a kettlebell to perform alternating rows while in a plank position. It targets the back, shoulders, and core muscles.
+Muscle Group: Back,Latissimus Dorsi,Traps
+Image: kettlebell_exercises/Kettlebell_Alternating_Renegade_Row.jpg

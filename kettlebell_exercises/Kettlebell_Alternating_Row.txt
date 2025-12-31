@@ -1,0 +1,4 @@
+Name: Kettlebell Alternating Row
+Description: This exercise involves holding a kettlebell in one hand and rowing it up towards the chest while keeping the other arm extended. The movement is then repeated on the other side, alternating between left and right. This exercise targets the back muscles, particularly the lats and rhomboids.
+Muscle Group: Abs,Back,Latissimus Dorsi,Traps
+Image: kettlebell_exercises/Kettlebell_Alternating_Row.jpg

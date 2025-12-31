@@ -1,0 +1,4 @@
+Name: Kipping Handstand Push-up
+Description: This exercise involves performing a handstand push-up while using a kipping motion to generate momentum and assist with the movement. It requires upper body strength, core stability, and coordination.
+Muscle Group: Shoulders
+Image: kettlebell_exercises/Kipping_Handstand_Push-up.jpg

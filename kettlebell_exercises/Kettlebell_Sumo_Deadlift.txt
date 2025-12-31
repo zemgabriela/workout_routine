@@ -1,0 +1,4 @@
+Name: Kettlebell Sumo Deadlift
+Description: This exercise involves using a kettlebell to perform a sumo deadlift, which targets the muscles in the legs, glutes, and lower back. The sumo stance allows for a wider range of motion and can be modified for different fitness levels.
+Muscle Group: Hips
+Image: kettlebell_exercises/Kettlebell_Sumo_Deadlift.jpg

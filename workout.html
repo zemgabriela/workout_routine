@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Kettlebell Training</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .exercise-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .exercise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .exercise-card.selected {
+            border: 3px solid #4caf50;
+            background: #f0fff4;
+        }
+
+        .exercise-checkbox {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .exercise-card h3 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin: 15px 0;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        .exercise-card img {
+            width: 100%;
+            max-width: 260px;
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 8px;
+            background: #f5f7fa;
+        }
+
+        .muscles-worked {
+            background: #f0f4ff;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 15px 0;
+            word-wrap: break-word;
+            white-space: normal;
+            line-height: 1.5;
+        }
+
+        .muscles-worked strong {
+            color: #667eea;
+        }
+
+        .tip {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            margin-top: 40px;
+            color: #666;
+        }
+
+        /* Training Panel */
+        .training-panel {
+            position: fixed;
+            right: -400px;
+            top: 0;
+            width: 400px;
+            height: 100vh;
+            background: white;
+            box-shadow: -5px 0 20px rgba(0,0,0,0.3);
+            transition: right 0.3s ease;
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .training-panel.open {
+            right: 0;
+        }
+
+        .training-toggle {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .training-toggle:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+
+        .training-toggle .badge {
+            background: white;
+            color: #4caf50;
+            border-radius: 50%;
+            padding: 2px 8px;
+            margin-left: 8px;
+            font-size: 0.9em;
+        }
+
+        .close-panel {
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
+            color: #667eea;
+        }
+
+        .selected-exercise {
+            background: #f0f4ff;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .selected-exercise h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .exercise-details {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .exercise-details input {
+            padding: 6px 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            width: 80px;
+        }
+
+        .remove-exercise {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 8px;
+        }
+
+        .save-training-btn, .load-training-btn, .clear-training-btn {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .save-training-btn {
+            background: #667eea;
+            color: white;
+        }
+
+        .save-training-btn:hover {
+            background: #5568d3;
+        }
+
+        .load-training-btn {
+            background: #ff9800;
+            color: white;
+        }
+
+        .load-training-btn:hover {
+            background: #e68900;
+        }
+
+        .clear-training-btn {
+            background: #f44336;
+            color: white;
+        }
+
+        .clear-training-btn:hover {
+            background: #da190b;
+        }
+
+        .training-name-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        .saved-workouts {
+            margin-top: 20px;
+        }
+
+        .saved-workout-item {
+            background: #e8f5e9;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .saved-workout-item:hover {
+            background: #c8e6c9;
+            transform: translateX(5px);
+        }
+
+        .saved-workout-item h4 {
+            color: #2e7d32;
+            margin-bottom: 5px;
+        }
+
+        .saved-workout-item small {
+            color: #666;
+        }
+
+        .delete-workout {
+            float: right;
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85em;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.85);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 10px;
+            animation: zoomIn 0.3s ease;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        #modalCaption {
+            text-align: center;
+            color: #fff;
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .training-panel {
+                width: 90%;
+                right: -90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="modalCaption"></div>
+</div>
+
+<!-- Training Panel -->
+<div id="trainingPanel" class="training-panel">
+    <span class="close-panel" onclick="toggleTrainingPanel()">&times;</span>
+    <h2 style="color: #667eea; margin-bottom: 20px;">🏋️ My Training Plan</h2>
+    
+    <input type="text" id="trainingName" class="training-name-input" placeholder="Training name (e.g., Full Body Workout)">
+    
+    <div id="selectedExercisesList"></div>
+    
+    <button class="save-training-btn" onclick="saveTraining()">💾 Save Training Plan</button>
+    <button class="clear-training-btn" onclick="clearSelection()">🗑️ Clear Selection</button>
+    
+    <hr style="margin: 20px 0; border: none; border-top: 2px solid #eee;">
+    
+    <h3 style="color: #667eea; margin-bottom: 15px;">📋 Saved Workouts</h3>
+    <div id="savedWorkoutsList" class="saved-workouts"></div>
+</div>
+
+<button class="training-toggle" onclick="toggleTrainingPanel()">
+    ✨ Training Plan <span class="badge" id="selectedCount">0</span>
+</button>
+
+<div class="container">
+    <header>
+        <h1>🏋️ Functional Kettlebell Training</h1>
+        <p class="subtitle">Build Strength, Power & Mobility with These Essential Kettlebell Exercises</p>
+    </header>
+
+    <div style="text-align:center; margin: 20px 0;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 18px; max-width: 520px; margin: 0 auto 28px auto;">
+            <input id="exerciseSearch" type="text" placeholder="🔍 Search exercises..." style="width: 100%; max-width: 500px; padding: 12px 18px; border-radius: 8px; border: 1.5px solid #667eea; font-size: 1.08em; margin-bottom: 0; background: #f0f4ff; color: #333; box-shadow: 0 1px 4px rgba(102,126,234,0.08); outline: none;">
+            <div id="filterBar" style="display: flex; justify-content: center; align-items: center; gap: 16px; background: rgba(255,255,255,0.95); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 18px 24px; width: 100%; max-width: 500px;">
+                <label for="muscleFilter" style="color: #667eea; font-weight: bold; font-size: 1.1em; margin-right: 0;">Filter by muscle:</label>
+                <select id="muscleFilter" multiple size="5" style="padding: 10px 18px; border-radius: 8px; font-size: 1.05em; border: 1px solid #667eea; background: #f0f4ff; color: #333; font-weight: 500; box-shadow: 0 1px 4px rgba(102,126,234,0.08); transition: border 0.2s; outline: none; min-width: 180px; max-width: 260px;">
+                    <option value="all" selected>All muscles</option>
+                </select>
+                <span style="font-size:0.95em;color:#888;">(Hold Ctrl/Cmd to select multiple)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-grid" id="exerciseGrid"></div>
+
+    <footer>
+        <h3>Happy Training!</h3>
+        <p>Focus on technique, control, and consistency.</p>
+    </footer>
+</div>
+
+<script>
+let allExercises = [];
+let selectedExercises = [];
+
+fetch("exercises.json")
+    .then(res => res.json())
+    .then(data => {
+        allExercises = data;
+        populateMuscleFilter(data);
+        renderExercises(data);
+        loadSavedWorkouts();
+        
+        // Check storage availability
+        if (!window.storage || typeof window.storage.set !== 'function') {
+            console.warn('⚠️ Persistent storage is not available. Workouts cannot be saved.');
+        } else {
+            console.log('✅ Storage API is available');
+        }
+    })
+    .catch(err => console.error("Failed to load exercises:", err));
+
+function populateMuscleFilter(exercises) {
+    const filter = document.getElementById("muscleFilter");
+    const search = document.getElementById("exerciseSearch");
+    const muscleSet = new Set();
+
+    exercises.forEach(ex => {
+        if (ex.muscles) {
+            ex.muscles.split(",").forEach(m => {
+                muscleSet.add(m.trim());
+            });
+        }
+    });
+
+    [...muscleSet].sort().forEach(muscle => {
+        const option = document.createElement("option");
+        option.value = muscle;
+        option.textContent = muscle;
+        filter.appendChild(option);
+    });
+
+    function filterAndRender() {
+        const selectedOptions = Array.from(filter.selectedOptions).map(opt => opt.value);
+        const searchTerm = search.value.trim().toLowerCase();
+        let filtered = allExercises;
+
+        // Muscle filter
+        if (!(selectedOptions.includes("all") || selectedOptions.length === 0)) {
+            filtered = filtered.filter(ex => {
+                if (!ex.muscles) return false;
+                return selectedOptions.some(sel => ex.muscles.split(",").map(m=>m.trim()).includes(sel));
+            });
+        }
+
+        // Search filter
+        if (searchTerm) {
+            filtered = filtered.filter(ex =>
+                (ex.name && ex.name.toLowerCase().includes(searchTerm)) ||
+                (ex.description && ex.description.toLowerCase().includes(searchTerm))
+            );
+        }
+
+        renderExercises(filtered);
+    }
+
+    filter.addEventListener("change", filterAndRender);
+    search.addEventListener("input", filterAndRender);
+}
+
+function renderExercises(exercises) {
+    const grid = document.getElementById("exerciseGrid");
+    grid.innerHTML = "";
+
+    exercises.forEach((ex, index) => {
+        const formattedMuscles = ex.muscles
+            ? ex.muscles.split(",").map(m => m.trim()).join(", ")
+            : "N/A";
+
+        const isSelected = selectedExercises.some(sel => sel.name === ex.name);
+
+        const card = document.createElement("div");
+        card.className = "exercise-card" + (isSelected ? " selected" : "");
+        card.id = `card-${index}`;
+
+        card.innerHTML = `
+            <input type="checkbox" class="exercise-checkbox" ${isSelected ? 'checked' : ''} 
+                   onchange="toggleExerciseSelection(${index}, this.checked)">
+            <img src="${ex.image}" alt="${ex.name}" class="exercise-img" style="cursor:pointer;">
+            <h3>${index + 1}. ${ex.name}</h3>
+
+            <div class="muscles-worked">
+                <strong>Muscles Worked:</strong> ${formattedMuscles}
+            </div>
+
+            <div class="tip">
+                <strong>Description:</strong> ${ex.description || "No description available."}
+            </div>
+        `;
+
+        grid.appendChild(card);
+    });
+
+    attachImageClickHandlers();
+}
+
+function toggleExerciseSelection(index, checked) {
+    const exercise = allExercises[index];
+    
+    if (checked) {
+        selectedExercises.push({
+            name: exercise.name,
+            muscles: exercise.muscles,
+            sets: 3,
+            reps: 10
+        });
+    } else {
+        selectedExercises = selectedExercises.filter(ex => ex.name !== exercise.name);
+    }
+    
+    updateSelectedCount();
+    renderSelectedExercises();
+    updateCardSelection(index, checked);
+}
+
+function updateCardSelection(index, checked) {
+    const card = document.getElementById(`card-${index}`);
+    if (card) {
+        if (checked) {
+            card.classList.add('selected');
+        } else {
+            card.classList.remove('selected');
+        }
+    }
+}
+
+function updateSelectedCount() {
+    document.getElementById('selectedCount').textContent = selectedExercises.length;
+}
+
+function renderSelectedExercises() {
+    const list = document.getElementById('selectedExercisesList');
+    
+    if (selectedExercises.length === 0) {
+        list.innerHTML = '<p style="color: #999; text-align: center; padding: 20px;">No exercises selected yet. Select exercises from the list to build your training plan.</p>';
+        return;
+    }
+    
+    list.innerHTML = selectedExercises.map((ex, index) => `
+        <div class="selected-exercise">
+            <h4>${ex.name}</h4>
+            <small style="color: #666;">${ex.muscles || 'N/A'}</small>
+            <div class="exercise-details">
+                <div>
+                    <label style="font-size: 0.9em; color: #666;">Sets:</label>
+                    <input type="number" value="${ex.sets}" min="1" max="10" 
+                           onchange="updateExerciseDetail(${index}, 'sets', this.value)">
+                </div>
+                <div>
+                    <label style="font-size: 0.9em; color: #666;">Reps:</label>
+                    <input type="number" value="${ex.reps}" min="1" max="50" 
+                           onchange="updateExerciseDetail(${index}, 'reps', this.value)">
+                </div>
+            </div>
+            <button class="remove-exercise" onclick="removeExercise(${index})">Remove</button>
+        </div>
+    `).join('');
+}
+
+function updateExerciseDetail(index, field, value) {
+    selectedExercises[index][field] = parseInt(value);
+}
+
+function removeExercise(index) {
+    const exerciseName = selectedExercises[index].name;
+    selectedExercises.splice(index, 1);
+    
+    const exerciseIndex = allExercises.findIndex(ex => ex.name === exerciseName);
+    if (exerciseIndex !== -1) {
+        const checkbox = document.querySelector(`#card-${exerciseIndex} .exercise-checkbox`);
+        if (checkbox) checkbox.checked = false;
+        updateCardSelection(exerciseIndex, false);
+    }
+    
+    updateSelectedCount();
+    renderSelectedExercises();
+}
+
+function clearSelection() {
+    if (selectedExercises.length === 0) return;
+    
+    if (confirm('Clear all selected exercises?')) {
+        selectedExercises = [];
+        updateSelectedCount();
+        renderSelectedExercises();
+        
+        document.querySelectorAll('.exercise-checkbox').forEach(cb => cb.checked = false);
+        document.querySelectorAll('.exercise-card').forEach(card => card.classList.remove('selected'));
+    }
+}
+
+function toggleTrainingPanel() {
+    const panel = document.getElementById('trainingPanel');
+    panel.classList.toggle('open');
+}
+
+async function saveTraining() {
+    if (selectedExercises.length === 0) {
+        alert('Please select at least one exercise first!');
+        return;
+    }
+    
+    // Use localStorage as fallback if window.storage is not available
+    const useLocalStorage = !window.storage || typeof window.storage.set !== 'function';
+    
+    const trainingName = document.getElementById('trainingName').value.trim() || 
+                        `Workout ${new Date().toLocaleDateString()}`;
+    
+    const training = {
+        name: trainingName,
+        exercises: selectedExercises,
+        date: new Date().toISOString()
+    };
+    
+    try {
+        let allWorkouts = await loadAllWorkouts();
+        allWorkouts.push(training);
+        let result = true;
+        if (useLocalStorage) {
+            localStorage.setItem('kettlebell-workouts', JSON.stringify(allWorkouts));
+        } else {
+            result = await window.storage.set('kettlebell-workouts', JSON.stringify(allWorkouts));
+        }
+        if (result !== false) {
+            alert(`✅ Training plan "${trainingName}" saved successfully!`);
+            document.getElementById('trainingName').value = '';
+            loadSavedWorkouts();
+        } else {
+            alert('❌ Failed to save training plan. Storage operation returned null.');
+        }
+    } catch (error) {
+        console.error('Error saving training:', error);
+        alert(`❌ Failed to save training plan: ${error.message || 'Unknown error'}`);
+    }
+}
+
+async function loadAllWorkouts() {
+    // Use localStorage as fallback if window.storage is not available
+    if (!window.storage || typeof window.storage.get !== 'function') {
+        try {
+            const result = localStorage.getItem('kettlebell-workouts');
+            return result ? JSON.parse(result) : [];
+        } catch (error) {
+            console.error('Error loading workouts from localStorage:', error);
+            return [];
+        }
+    }
+    try {
+        const result = await window.storage.get('kettlebell-workouts');
+        return result ? JSON.parse(result.value) : [];
+    } catch (error) {
+        console.error('Error loading workouts:', error);
+        return [];
+    }
+}
+
+async function loadSavedWorkouts() {
+    const workoutsList = document.getElementById('savedWorkoutsList');
+    const workouts = await loadAllWorkouts();
+    
+    if (workouts.length === 0) {
+        workoutsList.innerHTML = '<p style="color: #999; text-align: center; padding: 20px;">No saved workouts yet.</p>';
+        return;
+    }
+    
+    workoutsList.innerHTML = workouts.map((workout, index) => `
+        <div class="saved-workout-item" onclick="loadWorkout(${index})">
+            <button class="delete-workout" onclick="event.stopPropagation(); deleteWorkout(${index})">Delete</button>
+            <h4>${workout.name}</h4>
+            <small>${workout.exercises.length} exercises • ${new Date(workout.date).toLocaleDateString()}</small>
+        </div>
+    `).join('');
+}
+
+async function loadWorkout(index) {
+    const workouts = await loadAllWorkouts();
+    const workout = workouts[index];
+    
+    if (workout) {
+        selectedExercises = JSON.parse(JSON.stringify(workout.exercises));
+        document.getElementById('trainingName').value = workout.name;
+        
+        updateSelectedCount();
+        renderSelectedExercises();
+        
+        document.querySelectorAll('.exercise-checkbox').forEach(cb => cb.checked = false);
+        document.querySelectorAll('.exercise-card').forEach(card => card.classList.remove('selected'));
+        
+        selectedExercises.forEach(selEx => {
+            const exerciseIndex = allExercises.findIndex(ex => ex.name === selEx.name);
+            if (exerciseIndex !== -1) {
+                const checkbox = document.querySelector(`#card-${exerciseIndex} .exercise-checkbox`);
+                if (checkbox) checkbox.checked = true;
+                updateCardSelection(exerciseIndex, true);
+            }
+        });
+        
+        alert(`✅ Loaded workout: ${workout.name}`);
+    }
+}
+
+async function deleteWorkout(index) {
+    if (!confirm('Delete this workout?')) return;
+    
+    // Use localStorage as fallback if window.storage is not available
+    const useLocalStorage = !window.storage || typeof window.storage.set !== 'function';
+    try {
+        const workouts = await loadAllWorkouts();
+        workouts.splice(index, 1);
+        let result = true;
+        if (useLocalStorage) {
+            localStorage.setItem('kettlebell-workouts', JSON.stringify(workouts));
+        } else {
+            result = await window.storage.set('kettlebell-workouts', JSON.stringify(workouts));
+        }
+        if (result !== false) {
+            alert('✅ Workout deleted successfully!');
+            loadSavedWorkouts();
+        } else {
+            alert('❌ Failed to delete workout.');
+        }
+    } catch (error) {
+        console.error('Error deleting workout:', error);
+        alert(`❌ Failed to delete workout: ${error.message || 'Unknown error'}`);
+    }
+}
+
+function attachImageClickHandlers() {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const modalCaption = document.getElementById("modalCaption");
+    const closeBtn = document.querySelector(".modal-close");
+    const imgs = document.querySelectorAll(".exercise-img");
+
+    imgs.forEach(img => {
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalCaption.textContent = this.alt;
+        };
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+        modalImg.src = "";
+        modalCaption.textContent = "";
+    };
+
+    modal.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+            modalImg.src = "";
+            modalCaption.textContent = "";
+        }
+    };
+}
+</script>
+
+</body>
+</html>

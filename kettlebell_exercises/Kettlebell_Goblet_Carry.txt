@@ -1,0 +1,4 @@
+Name: Kettlebell Goblet Carry
+Description: This exercise involves holding a kettlebell by the handle with both hands and carrying it in front of your chest while walking. It targets the core, shoulders, and upper back muscles while also improving grip strength and stability.
+Muscle Group: Thighs
+Image: kettlebell_exercises/Kettlebell_Goblet_Carry.jpg

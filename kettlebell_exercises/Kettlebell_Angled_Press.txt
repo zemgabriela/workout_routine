@@ -1,0 +1,4 @@
+Name: Kettlebell Angled Press
+Description: This exercise involves holding a kettlebell in one hand and pressing it upwards at an angle, while keeping the other arm extended for balance. It primarily targets the shoulders and triceps, while also engaging the core and legs for stability.
+Muscle Group: Back,Front Deltoid,Traps
+Image: kettlebell_exercises/Kettlebell_Angled_Press.jpg

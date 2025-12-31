@@ -1,0 +1,4 @@
+Name: Kettlebell Sumo High Pull
+Description: This exercise involves using a kettlebell and performing a sumo stance while pulling the kettlebell up towards the chest. It targets the muscles in the legs, hips, and upper back.
+Muscle Group: Biceps,Calves,Forearms,Front Deltoid,Glutes,Hamstrings,Hips,Quadriceps,Side Deltoid
+Image: kettlebell_exercises/Kettlebell_Sumo_High_Pull.jpg

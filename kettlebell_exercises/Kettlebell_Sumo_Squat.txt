@@ -1,0 +1,4 @@
+Name: Kettlebell Sumo Squat
+Description: This exercise involves holding a kettlebell with both hands and standing with feet wider than shoulder-width apart in a sumo stance. From there, the individual performs a squat, keeping their back straight and pushing their hips back. The exercise targets the legs, glutes, and core muscles.
+Muscle Group: Hips
+Image: kettlebell_exercises/Kettlebell_Sumo_Squat.jpg

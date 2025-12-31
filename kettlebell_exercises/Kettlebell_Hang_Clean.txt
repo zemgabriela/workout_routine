@@ -1,0 +1,4 @@
+Name: Kettlebell Hang Clean
+Description: This exercise involves using a kettlebell to perform a hang clean movement, which involves lifting the kettlebell from a hanging position and bringing it up to the chest while keeping the elbows high. It is a full-body exercise that targets the shoulders, back, legs, and core.
+Muscle Group: Biceps,Calves,Forearms,Front Deltoid,Glutes,Hamstrings,Quadriceps,Shoulders,Side Deltoid
+Image: kettlebell_exercises/Kettlebell_Hang_Clean.jpg

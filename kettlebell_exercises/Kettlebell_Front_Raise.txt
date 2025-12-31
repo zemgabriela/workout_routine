@@ -1,0 +1,4 @@
+Name: Kettlebell Front Raise
+Description: This exercise involves holding a kettlebell in front of your body with both hands and raising it up to shoulder height, then lowering it back down. It primarily targets the shoulders and can be done with various weights and repetitions.
+Muscle Group: Shoulders
+Image: kettlebell_exercises/Kettlebell_Front_Raise.jpg

@@ -1,0 +1,4 @@
+Name: Kettlebell One Arm Clean and Jerk
+Description: This exercise involves lifting a kettlebell with one arm from the ground to the shoulder, then pushing it overhead in a jerking motion. It is a full-body exercise that targets the shoulders, back, legs, and core.
+Muscle Group: Biceps,Calves,Forearms,Front Deltoid,Glutes,Hamstrings,Quadriceps,Shoulders,Side Deltoid,Triceps
+Image: kettlebell_exercises/Kettlebell_One_Arm_Clean_and_Jerk.jpg

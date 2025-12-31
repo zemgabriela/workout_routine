@@ -1,0 +1,4 @@
+Name: Kettlebell Alternating Hang Clean
+Description: This exercise involves using a kettlebell to perform alternating hang cleans, which involves lifting the kettlebell from a hanging position and bringing it up to the shoulder in a fluid motion. This exercise targets the shoulders, back, and core muscles.
+Muscle Group: Biceps,Forearms,Upper Arms
+Image: kettlebell_exercises/Kettlebell_Alternating_Hang_Clean.jpg

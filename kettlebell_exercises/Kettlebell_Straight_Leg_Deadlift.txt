@@ -1,0 +1,4 @@
+Name: Kettlebell Straight Leg Deadlift
+Description: This exercise involves holding a kettlebell with both hands and bending forward at the hips while keeping the legs straight. The movement targets the hamstrings, glutes, and lower back muscles.
+Muscle Group: Glutes,Hips,Spine
+Image: kettlebell_exercises/Kettlebell_Straight_Leg_Deadlift.jpg

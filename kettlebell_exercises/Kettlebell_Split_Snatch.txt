@@ -1,0 +1,4 @@
+Name: Kettlebell Split Snatch
+Description: This exercise involves using a kettlebell to perform a split snatch movement, which involves lifting the kettlebell from the ground to overhead while simultaneously splitting the legs into a lunge position. It is a full-body exercise that targets the legs, core, and shoulders.
+Muscle Group: Hips
+Image: kettlebell_exercises/Kettlebell_Split_Snatch.jpg

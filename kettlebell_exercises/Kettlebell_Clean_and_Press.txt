@@ -1,0 +1,4 @@
+Name: Kettlebell Clean and Press
+Description: This exercise involves lifting a kettlebell from the ground to the shoulder, then pressing it overhead. It is a full-body movement that targets the shoulders, back, legs, and core. It can be done with one or two kettlebells.
+Muscle Group: Weightlifting
+Image: kettlebell_exercises/Kettlebell_Clean_and_Press.jpg

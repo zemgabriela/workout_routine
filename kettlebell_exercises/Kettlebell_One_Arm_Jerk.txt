@@ -1,0 +1,4 @@
+Name: Kettlebell One Arm Jerk
+Description: This exercise involves holding a kettlebell in one hand and performing a quick, explosive movement to lift it overhead. It primarily targets the shoulders, triceps, and core muscles. The movement requires proper technique and coordination to avoid injury and maximize results.
+Muscle Group: Front Deltoid,Glutes,Hamstrings,Quadriceps,Side Deltoid,Thighs,Triceps
+Image: kettlebell_exercises/Kettlebell_One_Arm_Jerk.jpg

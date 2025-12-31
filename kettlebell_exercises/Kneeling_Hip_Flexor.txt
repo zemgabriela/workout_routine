@@ -1,0 +1,4 @@
+Name: Kneeling Hip Flexor
+Description: This exercise involves kneeling on one knee while keeping the other foot flat on the ground in front of you. You then lean forward, stretching the hip flexor muscles in the kneeling leg. This exercise can help improve flexibility and reduce tightness in the hip flexors.
+Muscle Group: Glutes,Quadriceps,Thighs
+Image: kettlebell_exercises/Kneeling_Hip_Flexor.jpg

@@ -1,0 +1,4 @@
+Name: Kettlebell Press Up
+Description: This exercise involves performing a push-up while holding onto a kettlebell with one hand. The kettlebell adds an extra challenge to the exercise by requiring more stability and strength in the core and upper body. The exercise can be repeated on both sides for a balanced workout.
+Muscle Group: Chest
+Image: kettlebell_exercises/Kettlebell_Press_Up.jpg

@@ -1,0 +1,4 @@
+Name: Kipping Muscle Up
+Description: This exercise involves using a swinging motion to generate momentum and pull oneself up and over a set of rings or bar, transitioning from a hanging position to a support position. It requires a combination of upper body strength, coordination, and timing.
+Muscle Group: Abs,Latissimus Dorsi,Waist
+Image: kettlebell_exercises/Kipping_Muscle_Up.jpg

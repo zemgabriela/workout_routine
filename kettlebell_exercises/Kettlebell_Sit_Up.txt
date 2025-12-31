@@ -1,0 +1,4 @@
+Name: Kettlebell Sit Up
+Description: This exercise involves lying on your back with a kettlebell held above your chest, then sitting up while keeping the kettlebell stable and lowering back down to the starting position. It primarily targets the abdominal muscles and can also engage the arms and shoulders.
+Muscle Group: Abs,Waist
+Image: kettlebell_exercises/Kettlebell_Sit_Up.jpg

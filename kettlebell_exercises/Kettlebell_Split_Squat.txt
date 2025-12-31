@@ -1,0 +1,4 @@
+Name: Kettlebell Split Squat
+Description: This exercise involves holding a kettlebell in one hand while performing a split squat, which targets the legs and glutes. The weight of the kettlebell adds an extra challenge to the exercise and helps to increase strength and stability.
+Muscle Group: Thighs
+Image: kettlebell_exercises/Kettlebell_Split_Squat.jpg

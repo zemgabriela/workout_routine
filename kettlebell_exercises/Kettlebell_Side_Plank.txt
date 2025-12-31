@@ -1,0 +1,4 @@
+Name: Kettlebell Side Plank
+Description: This exercise involves holding a side plank position while also holding a kettlebell in one hand. The weight of the kettlebell adds an extra challenge to the exercise, requiring increased core stability and strength.
+Muscle Group: Waist
+Image: kettlebell_exercises/Kettlebell_Side_Plank.jpg

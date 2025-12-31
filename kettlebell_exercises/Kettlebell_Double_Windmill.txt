@@ -1,0 +1,4 @@
+Name: Kettlebell Double Windmill
+Description: This exercise involves holding a kettlebell in one hand and performing a windmill motion with the body, lowering the kettlebell towards the opposite foot. It targets the core, shoulders, and hips while also improving flexibility and stability. The exercise can be challenging and requires proper form to avoid injury.
+Muscle Group: Obliques,Waist
+Image: kettlebell_exercises/Kettlebell_Double_Windmill.jpg

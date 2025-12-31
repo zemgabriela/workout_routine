@@ -1,0 +1,4 @@
+Name: Kettlebell Bent Over Row
+Description: This exercise involves using a kettlebell to perform a bent-over row, which targets the muscles in the back, shoulders, and arms. The movement involves bending forward at the hips while holding the kettlebell with both hands, then pulling the weight up towards the chest while keeping the elbows close to the body.
+Muscle Group: Back
+Image: kettlebell_exercises/Kettlebell_Bent_Over_Row.jpg

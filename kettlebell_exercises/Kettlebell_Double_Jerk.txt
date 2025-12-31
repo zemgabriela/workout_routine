@@ -1,0 +1,4 @@
+Name: Kettlebell Double Jerk
+Description: This exercise involves holding a kettlebell in each hand and performing a double jerk movement, which involves bending the knees and explosively pushing the kettlebells overhead while simultaneously dropping into a partial squat. The movement is then reversed to return to the starting position. This exercise targets the shoulders, triceps, and legs.
+Muscle Group: Shoulders
+Image: kettlebell_exercises/Kettlebell_Double_Jerk.jpg

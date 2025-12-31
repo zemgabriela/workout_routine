@@ -1,0 +1,4 @@
+Name: Kneeling Push-up
+Description: This exercise involves starting in a kneeling position and performing a push-up by lowering your body towards the ground and then pushing back up. It is a modified version of a traditional push-up that is easier on the wrists and shoulders.
+Muscle Group: Chest
+Image: kettlebell_exercises/Kneeling_Push-up.jpg

@@ -1,0 +1,4 @@
+Name: Kettlebell Dead Clean
+Description: This exercise involves lifting a kettlebell from the ground to the chest in a clean motion, using the hips and legs to generate power. It primarily targets the muscles of the posterior chain, including the glutes, hamstrings, and lower back.
+Muscle Group: Weightlifting
+Image: kettlebell_exercises/Kettlebell_Dead_Clean.jpg

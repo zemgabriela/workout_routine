@@ -1,0 +1,4 @@
+Name: Kettlebell Figure 8
+Description: This exercise involves passing a kettlebell between your legs in a figure 8 motion while standing with your feet shoulder-width apart. It targets the core, glutes, and legs while also improving coordination and balance.
+Muscle Group: Obliques,Waist
+Image: kettlebell_exercises/Kettlebell_Figure_8.jpg

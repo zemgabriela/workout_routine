@@ -1,0 +1,4 @@
+Name: Kettlebell Pistol Squat
+Description: This exercise involves holding a kettlebell in one hand while performing a pistol squat, which is a one-legged squat where the non-working leg is extended in front of the body. It targets the lower body, particularly the quads, glutes, and hamstrings, as well as the core for stability.
+Muscle Group: Glutes,Quadriceps,Thighs
+Image: kettlebell_exercises/Kettlebell_Pistol_Squat.jpg

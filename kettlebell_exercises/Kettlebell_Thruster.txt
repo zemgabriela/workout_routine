@@ -1,0 +1,4 @@
+Name: Kettlebell Thruster
+Description: This exercise involves holding a kettlebell at shoulder height, squatting down, and then using the momentum from standing up to press the kettlebell overhead. It is a full-body exercise that targets the legs, core, and shoulders.
+Muscle Group: Calves,Front Deltoid,Hamstrings,Quadriceps,Shoulders,Side Deltoid,Triceps
+Image: kettlebell_exercises/Kettlebell_Thruster.jpg

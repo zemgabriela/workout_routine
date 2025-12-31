@@ -1,0 +1,4 @@
+Name: Kettlebell Side Lunge
+Description: This exercise involves holding a kettlebell in one hand while lunging to the side with the opposite leg. It targets the legs, glutes, and core muscles.
+Muscle Group: Thighs
+Image: kettlebell_exercises/Kettlebell_Side_Lunge.jpg

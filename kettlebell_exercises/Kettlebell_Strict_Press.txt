@@ -1,0 +1,4 @@
+Name: Kettlebell Strict Press
+Description: This exercise involves lifting a kettlebell from shoulder height to overhead using only the strength of the arms and shoulders, without any momentum from the legs or hips. It primarily targets the deltoids, triceps, and upper back muscles.
+Muscle Group: Front Deltoid,Shoulders
+Image: kettlebell_exercises/Kettlebell_Strict_Press.jpg

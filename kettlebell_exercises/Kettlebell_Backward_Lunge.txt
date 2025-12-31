@@ -1,0 +1,4 @@
+Name: Kettlebell Backward Lunge
+Description: This exercise involves holding a kettlebell and stepping backwards into a lunge position, then returning to a standing position. It targets the legs, glutes, and core muscles.
+Muscle Group: Glutes,Hips,Quadriceps,Thighs
+Image: kettlebell_exercises/Kettlebell_Backward_Lunge.jpg

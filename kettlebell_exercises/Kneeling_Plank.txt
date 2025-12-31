@@ -1,0 +1,4 @@
+Name: Kneeling Plank
+Description: This exercise involves starting in a kneeling position and then extending the legs behind you to hold a plank position. It is a great core and upper body strengthening exercise.
+Muscle Group: Waist
+Image: kettlebell_exercises/Kneeling_Plank.jpg

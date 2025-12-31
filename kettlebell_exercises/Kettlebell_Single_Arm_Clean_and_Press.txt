@@ -1,0 +1,4 @@
+Name: Kettlebell Single Arm Clean and Press
+Description: This exercise involves using a kettlebell to perform a single-arm clean and press movement. The kettlebell is lifted from the ground to the shoulder, then pressed overhead with one arm while maintaining proper form and control. This exercise targets the shoulders, arms, and core muscles.
+Muscle Group: Weightlifting
+Image: kettlebell_exercises/Kettlebell_Single_Arm_Clean_and_Press.jpg

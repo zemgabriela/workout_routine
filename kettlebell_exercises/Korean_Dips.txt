@@ -1,0 +1,4 @@
+Name: Korean Dips
+Description: A description or demonstration of the exercise known as Korean dips, which typically involves using parallel bars to perform a dip motion while simultaneously lifting one leg off the ground and extending it forward. This exercise targets the triceps, chest, and core muscles.
+Muscle Group: Chest
+Image: kettlebell_exercises/Korean_Dips.jpg

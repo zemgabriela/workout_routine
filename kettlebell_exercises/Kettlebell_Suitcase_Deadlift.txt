@@ -1,0 +1,4 @@
+Name: Kettlebell Suitcase Deadlift
+Description: This exercise involves lifting a kettlebell with one hand while keeping the other hand free and extended to the side, mimicking the action of carrying a suitcase. It primarily targets the muscles in the legs, back, and core.
+Muscle Group: Hips
+Image: kettlebell_exercises/Kettlebell_Suitcase_Deadlift.jpg

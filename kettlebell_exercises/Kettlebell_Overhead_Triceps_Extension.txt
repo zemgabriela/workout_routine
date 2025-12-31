@@ -1,0 +1,4 @@
+Name: Kettlebell Overhead Triceps Extension
+Description: This exercise involves holding a kettlebell with both hands and extending it overhead while keeping the elbows close to the head. The movement primarily targets the triceps muscles in the arms.
+Muscle Group: Triceps,Upper Arms
+Image: kettlebell_exercises/Kettlebell_Overhead_Triceps_Extension.jpg

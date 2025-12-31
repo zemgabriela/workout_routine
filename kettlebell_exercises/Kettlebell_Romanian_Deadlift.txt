@@ -1,0 +1,4 @@
+Name: Kettlebell Romanian Deadlift
+Description: This exercise involves holding a kettlebell with both hands and hinging at the hips to lower the weight towards the ground while keeping the back straight. It primarily targets the hamstrings and glutes.
+Muscle Group: Hips
+Image: kettlebell_exercises/Kettlebell_Romanian_Deadlift.jpg

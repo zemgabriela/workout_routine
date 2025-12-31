@@ -1,0 +1,4 @@
+Name: Kettlebell Seesaw Press
+Description: The Kettlebell Seesaw Press is an exercise that involves pressing two kettlebells alternately while standing. It targets the shoulders, triceps, and core muscles, and can help improve upper body strength and stability.
+Muscle Group: Front Deltoid,Shoulders
+Image: kettlebell_exercises/Kettlebell_Seesaw_Press.jpg

@@ -1,0 +1,4 @@
+Name: Kettlebell Two Arm Row
+Description: This exercise involves holding a kettlebell in both hands and pulling it towards your chest while keeping your back straight. It primarily targets the muscles in your back and arms.
+Muscle Group: Back,Latissimus Dorsi,Traps
+Image: kettlebell_exercises/Kettlebell_Two_Arm_Row.jpg

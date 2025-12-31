@@ -1,0 +1,4 @@
+Name: Kettlebell Pirate Ships
+Description: This exercise involves holding a kettlebell in one hand and swinging it between the legs while simultaneously lifting the opposite leg off the ground and extending it behind the body. The movement resembles a pirate ship rocking on the waves. The exercise targets the core, glutes, and hamstrings.
+Muscle Group: Rear Deltoid,Waist
+Image: kettlebell_exercises/Kettlebell_Pirate_Ships.jpg

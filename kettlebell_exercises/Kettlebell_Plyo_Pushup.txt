@@ -1,0 +1,4 @@
+Name: Kettlebell Plyo Pushup
+Description: This exercise involves performing a pushup while holding onto kettlebells, and then explosively pushing up and jumping onto the kettlebells. It is a challenging plyometric exercise that targets the chest, shoulders, triceps, and core muscles.
+Muscle Group: Chest
+Image: kettlebell_exercises/Kettlebell_Plyo_Pushup.jpg

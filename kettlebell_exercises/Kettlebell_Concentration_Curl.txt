@@ -1,0 +1,4 @@
+Name: Kettlebell Concentration Curl
+Description: This exercise involves holding a kettlebell in one hand and curling it towards the shoulder while keeping the upper arm stationary. It primarily targets the biceps and can be done with various weights and repetitions.
+Muscle Group: Upper Arms
+Image: kettlebell_exercises/Kettlebell_Concentration_Curl.jpg

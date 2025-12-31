@@ -1,0 +1,4 @@
+Name: Knee Touch Crunch
+Description: This exercise involves lying on your back with your knees bent and feet flat on the ground. You then lift your shoulders off the ground and touch your right knee with your left elbow, then switch and touch your left knee with your right elbow. This movement targets the abs and obliques.
+Muscle Group: Abs,Waist
+Image: kettlebell_exercises/Knee_Touch_Crunch.jpg

@@ -1,0 +1,4 @@
+Name: Kettlebell Wrist Curl
+Description: The kettlebell wrist curl is an exercise that targets the forearm muscles. It involves holding a kettlebell with an overhand grip and curling the wrist upwards, then lowering it back down. This exercise can help improve grip strength and wrist mobility.
+Muscle Group: Forearms
+Image: kettlebell_exercises/Kettlebell_Wrist_Curl.jpg

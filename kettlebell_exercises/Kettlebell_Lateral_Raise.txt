@@ -1,0 +1,4 @@
+Name: Kettlebell Lateral Raise
+Description: This exercise involves holding a kettlebell in one hand and raising it laterally to shoulder height, while keeping the arm straight. It primarily targets the deltoid muscles in the shoulder and can help improve shoulder stability and mobility.
+Muscle Group: Shoulders,Side Deltoid
+Image: kettlebell_exercises/Kettlebell_Lateral_Raise.jpg

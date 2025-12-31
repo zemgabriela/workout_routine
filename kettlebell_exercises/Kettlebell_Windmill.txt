@@ -1,0 +1,4 @@
+Name: Kettlebell Windmill
+Description: The Kettlebell Windmill is a strength training exercise that targets the core, shoulders, and hips. It involves holding a kettlebell overhead with one arm while bending and rotating the torso to touch the opposite foot. The exercise requires stability and mobility in the shoulders and hips, making it a challenging movement for many people.
+Muscle Group: Obliques,Waist
+Image: kettlebell_exercises/Kettlebell_Windmill.jpg

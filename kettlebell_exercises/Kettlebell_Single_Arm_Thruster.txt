@@ -1,0 +1,4 @@
+Name: Kettlebell Single Arm Thruster
+Description: This exercise involves holding a kettlebell in one hand and performing a squat, followed by pressing the kettlebell overhead in one fluid motion. It is a full-body exercise that targets the legs, core, shoulders, and arms.
+Muscle Group: Shoulders,Thighs
+Image: kettlebell_exercises/Kettlebell_Single_Arm_Thruster.jpg
